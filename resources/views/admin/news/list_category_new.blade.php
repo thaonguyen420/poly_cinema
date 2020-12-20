@@ -7,11 +7,7 @@
                                 <table id="datatable-buttons" class="table table-striped table-bordered" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
-                                        <th style="width:20px;">
-              <label class="i-checks m-b-none">
-                <input type="checkbox"><i></i>
-              </label>
-            
+                                       
                                         <th>Tên danh mục</th>
                                         <th>Slug</th>
                                         <th>Sửa</th>
@@ -21,7 +17,6 @@
                                     <tbody>
                                     @foreach($category_new as $key => $cate_new)
                                         <tr >
-                                        <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
                                         <td>{{ $cate_new->cate_new_name }}</td>
                                         <td>{{ $cate_new->cate_new_slug }}</td>
                                         <td>

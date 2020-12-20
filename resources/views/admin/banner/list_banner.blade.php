@@ -7,11 +7,7 @@
                                 <table id="datatable-buttons" class="table table-striped table-bordered" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
-                                      <th style="width:20px;">
-                                      <label class="i-checks m-b-none">
-                                        <input type="checkbox"><i></i>
-                                      </label>
-                                    </th>
+                                     
                                     <th>Tên Banner</th>
                                     <th>Hình ảnh</th>
                                     <th>Mô tả</th>
@@ -22,7 +18,6 @@
                                     <tbody>
                                     @foreach($all_banner as $key => $banner)
                                         <tr >
-                                        <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
                                         <td>{{ $banner->banner_name }}</td>
                                         <td><img src="{{asset('public/upload/banner/'.$banner->banner_image)}}" height="150" width="400"></td>
                                         <td>{!! $banner->banner_desc !!}</td>

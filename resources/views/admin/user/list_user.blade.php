@@ -7,26 +7,25 @@
                                 <table id="datatable-buttons" class="table table-striped table-bordered" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
-                                        <th style="width:20px;">
-                                        <label class="i-checks m-b-none">
-                                          <input type="checkbox"><i></i>
-                                        </label>
-                                      
-                                        <th>Họ Tên</th>
+                                      <th>Họ Tên</th>
                                       <th>Email</th>
                                       <th>Ngày sinh</th>
                                       <th>Quyền</th>
+                                      <th>Chỉnh</th>
                                       <th>Xoá</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                     @foreach($all_user as $key => $user)
                                         <tr >
-                                      <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
                                       <td>{{ $user->name }}</td>
                                       <td>{{$user->email}}</td>
                                       <td>{{$user->born}}</td>
                                       <td>{{$user->power}}</td>
+                                      <td>
+                                          <a href="{{URL::to('/edit-user/'.$user->id)}}" class="active styling-edit" ui-toggle-class="">
+                                            <i class="fa fa-pencil-square-o text-success text-active"></i></a> </td>
+
                                       <td>
                                         <a onclick="return confirm('Bạn có chắc là muốn xóa user này ko?')" href="{{URL::to('/delete-user/'.$user->id)}}" class="active styling-edit" ui-toggle-class="">
                                           <i class="fa fa-times text-danger text"></i>
