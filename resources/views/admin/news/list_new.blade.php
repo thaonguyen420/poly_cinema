@@ -7,11 +7,7 @@
                                 <table id="datatable-buttons" class="table table-striped table-bordered" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
-                                      <th style="width:20px;">
-                                      <label class="i-checks m-b-none">
-                                        <input type="checkbox"><i></i>
-                                      </label>
-                                    </th>
+                                      
                                     <th>Tên bài viết</th>
                                     <th>Slug</th>
                                     <th>Mô tả</th>
@@ -26,7 +22,6 @@
                                     <tbody>
                                     @foreach($new as $key => $tintuc)
                                         <tr >
-                                        <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
                                         <td>{{ $tintuc->new_title }}</td>
                                         <td>{{ $tintuc->new_slug }}</td>
                                         <td>{!! $tintuc->new_desc !!}</td>

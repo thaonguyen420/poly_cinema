@@ -33,7 +33,7 @@
                             <form action="{{route('combo.destroy',$tt->id_combo)}}" method="post">
                                 {{csrf_field()}}
                                 {!! method_field('delete') !!}
-                                <button onclick="return confirm('Xóa thiệt hông?');" class="btn btn-danger"
+                                <button onclick="return confirm('Bạn có chắc muốn xoá combo này không?');" class="btn btn-danger"
                                     type="submit">Xóa</button>
                             </form>
                         </td>

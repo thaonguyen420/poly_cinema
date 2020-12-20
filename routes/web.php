@@ -69,7 +69,7 @@ Route::get('/contacts', function(){
 route::post("/contacts","GuimailController@store");
 Route::post('/gui','GuimailController@guimaillienhe');
 
-// quản lsi danh mục tin tức
+// Quản lí danh mục tin tức
 Route::get('/add-category-new','CategoryNew@add_category_new');
 Route::get('/all-category-new','CategoryNew@all_category_new');
 Route::get('/edit-category-new/{category_id}','CategoryNew@edit_category_new');
@@ -78,7 +78,7 @@ Route::post('/update-category-new/{category_id}','CategoryNew@update_category_ne
 Route::post('/save-category-new','CategoryNew@save_category_new');
 Route::get('/delete-category-new/{category_id}','CategoryNew@delete_category_new');
 Route::get('/dashboard','DashboardController@index');
-// quản lí tin tức
+// Quản lí tin tức
 Route::get('/add-new','NewController@add_new');
 Route::get('/all-new','NewController@all_new');
 Route::get('/delete-new/{new_id}','NewController@delete_new');
@@ -86,7 +86,7 @@ Route::get('/edit-new/{new_id}','NewController@edit_new');
 Route::post('/save-new','NewController@save_new');
 Route::post('/update-new/{new_id}','NewController@update_new');
 
-// hiển thị tin tức
+// Hiển thị tin tức
 Route::get('news-single/{new_id}', 'NewController@news_single'); 
 // Route::post('comment/{new_id}', 'NewController@comment');
 
@@ -101,6 +101,11 @@ Route::post('/update-banner/{banner_id}','BannerController@update_banner');
 //User
 Route::get('/manage-user', 'UserController@manage_user'); 
 Route::get('/delete-user/{id}','UserController@delete_user');
+Route::get('/edit-user/{id}','UserController@edit_user');
+Route::post('/update-user/{id}','UserController@update_user');
+
+
+
 
 
 
