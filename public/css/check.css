@@ -1,0 +1,133 @@
+.qr-wrap{
+    background: white;
+    padding: 10px;
+    margin-top: 100px;
+}
+.check-title b{
+    font-size: 30px;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+}
+.check-name{
+    display: grid;
+    width: 100%;
+    font-size: 20px;
+}
+.check-name-2{
+    width: 100%;
+    color: #969695;;
+    font-size: 16px;
+}
+.img{
+    display: block;
+    width: 100%;
+}
+.check-theater{
+    font-size: 14px;
+    display: grid;
+    color: black;
+    text-align: center;
+    margin: 10px 0;
+}
+.check-date{
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.check-room{
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.check-time{
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.scan-zone{
+    border: 3px solid limegreen;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);;
+}
+#preview{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ticket-wrap{
+    padding: 5px;
+    height: 100%;
+   
+}
+.ticket{
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.ticket-title{
+    text-align: center;
+    display: grid;
+    color: black;
+    border: 2px solid;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.ticket-status{
+    text-align: center;
+    display: grid;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.ticket-checked{
+    color: limegreen;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    display: block;
+}
+.ticket-deny{
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    display: block;
+}
+.fas{
+    font-family: "Font Awesome 5 Free"!important;
+}
+.ticket-code{
+    text-align: left;
+    display: grid;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.ticket-seat{
+    text-align: left;
+    display: grid;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.seat{
+    text-align: center;
+    display: grid;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+#ticket-code{
+    height: 27px;
+    text-align: center;
+}
+#ticket-status{
+    height: 27px;
+}
