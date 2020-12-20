@@ -3,8 +3,8 @@
 <div class="row row-sm">
     <div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
         <div class="card-box tilebox-one">
-        <i class="fas fa-film-alt float-right"></i>
-            <h6 class="text-muted text-uppercase m-b-20">Movie</h6>
+        <i class="icon fas fa-film-alt float-right"></i>
+            <h6 class="text-muted text-uppercase m-b-20">Phim</h6>
             <h2 class="m-b-20" data-plugin="counterup">{{$countMovie}}</h2>
             <p> <a class="text-muted" href="{{route('phim.index')}}"> Xem chi tiết</a> </p>
         </div>
@@ -50,14 +50,7 @@
             <p> <a class="text-muted" href="{{route('comment.index')}}"> Xem chi tiết</a> </p>
         </div>
     </div>
-    <div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
-        <div class="card-box tilebox-one">
-        <i class="icon far fa-popcorn float-right"></i>
-            <h6 class="text-muted text-uppercase m-b-20">Book_Combo</h6>
-            <h2 class="m-b-20" data-plugin="counterup">{{$countB_combo}}</h2>
-            <p> <a class="text-muted" href="{{route('book_combo.index')}}"> Xem chi tiết</a> </p>
-        </div>
-    </div>
+    
     <div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
         <div class="card-box tilebox-one">
         <i class="icon far fa-popcorn float-right"></i>

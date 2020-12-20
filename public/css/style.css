@@ -1,3 +1,11 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title-psc a {
+    font-size: 20px;
+}
+
 ::-moz-selection {
     color: #fff;
     background: #ec7532
@@ -176,7 +184,7 @@ h3 {
 }
 
 span.title {
-    font-size: 24px;
+    font-size: 21px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #fbbd61;
@@ -1409,8 +1417,8 @@ a.arrow-button:hover {
 }
 
 .comingSoon-slides h3 {
-    font-size: 34px;
-    margin-bottom: 0
+    font-size: 27px;
+    margin-bottom: 0;
 }
 
 .comingSoon-slides .star-rating {
@@ -3219,7 +3227,7 @@ span.text-movie {
 
 .blog-item-text h3 a {
     margin-top: 0px;
-    font-size: 23px;
+    font-size: 18px;
 }
 
 .blog-item-text p {

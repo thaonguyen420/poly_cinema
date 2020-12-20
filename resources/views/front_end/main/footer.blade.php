@@ -12,10 +12,12 @@
                 <h6>Download Mobile App </h6>
                 <ul>
                     <li>
-                        <a href="#"><img src="images/playstore@3x.png" alt="" class="img-app"></a>
+                        <a href="#">
+                        <img src="images/playstore@3x.png" alt="" class="img-app">
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><img src="images/playstore@3x.png" alt="" class="img-app"></a>
+                        <a href="#"><img src="images/app-store.png" alt="" class="img-app"></a>
                     </li>
 
                 </ul>
@@ -23,8 +25,8 @@
             <div class="col-sm-3 col-xs-6">
                 <h6>Liên hệ</h6>
                 <ul>
-                    <li>Trụ sở :</li>
-                    <li>Hotline :</li>
+                    <li>Trụ sở : 342 FPLOY Cinema, Quang Trung </li>
+                    <li>Số điện thoại : 0369789457</li>
                     <li>Email : thesis@gmail.com</li>
                     <li>(7:00 - 22:00 Kể cả thứ 7, CN)</li>
                 </ul>

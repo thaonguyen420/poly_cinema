@@ -20,7 +20,7 @@
                             @foreach($listphim as $phim)
                             <div class="tab-item" id="tab-main-{{$phim->id_tl}}">
                             <?php
-                                $showPhim=DB::table('movies')->join('category_movie', 'movies.id_tl', '=', 'category_movie.id_tl')->where('movies.id_tl','=',$phim->id_tl)->get();
+                                $showPhim=DB::table('movies')->join('category_movie', 'movies.id_tl', '=', 'category_movie.id_tl')->where('movies.id_tl','=',$phim->id_tl)->limit(4)->get();
                             ?>
                             @foreach($showPhim as $p)
                             <div class="row movie-tabs" style="margin-top:20px">
@@ -32,7 +32,7 @@
                                 <div class="col-md-10 col-sm-9">
                                 
                                     <span class="title">{{$p->name}}</span>                               
-                                    <p class="box-content box-movie" style="margin-top:20px">{{$p->content}}</p>
+                                    <p class="box-content box-movie" style="margin-top:20px">{!! $p->content !!}</p>
                                     <p ><a href="{{URL::to('single-movie/'.$p->movieId)}}" class="arrow-button">Đọc thêm</a></p>
                                     
                                 </div>

@@ -23,11 +23,12 @@
                         <td>
                             {{$tt->name}}
                         </td>
-                        <td>
-                            {{$tt->email}}
-                        </td>
+                       
                         <td>
                             {{$tt->content}}
+                        </td>
+                        <td>
+                            {{$tt->email}}
                         </td>
                         <td>
                             <form action="{{route('contact_Ad.destroy',$tt->id)}}" method="post">

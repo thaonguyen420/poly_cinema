@@ -3,7 +3,7 @@
 <div class="row">
     <div class="col-12">
         <div class="card-box table-responsive">
-            <h4 class="m-t-0 header-title">Liên hệ</h4>
+            <h4 class="m-t-0 header-title">Phòng</h4>
             <table id="datatable-buttons" class="table table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                     <tr>

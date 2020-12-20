@@ -48,8 +48,8 @@
                         </span>
                     </div>
                     <div class="col">
-                        <h4 class="no-underline">Địa chỉ</h4>
-                        <p>342 Sloane St, London, W1D 3NE</p>
+                        <h4 class="no-underline">Trụ sở</h4>
+                        <p>342 FPLOY Cinema, Quang Trung </p>
                     </div>
                 </div>
                 <div class="icon-row">
@@ -61,7 +61,7 @@
                     <div class="col">
                         <h4 class="no-underline">Email</h4>
                         <p><a href="https://www.klevermedia.co.uk/cdn-cgi/l/email-protection" class="__cf_email__"
-                                data-cfemail="b5dcdbd3daf5d8dac3dcd0c6c1d4c79bd6da9bc0de">[email&#160;protected]</a></p>
+                                data-cfemail="b5dcdbd3daf5d8dac3dcd0c6c1d4c79bd6da9bc0de">Thesis@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="icon-row">
@@ -72,7 +72,7 @@
                     </div>
                     <div class="col">
                         <h4 class="no-underline">Điện thoại</h4>
-                        <p>+44 0330 123 4567</p>
+                        <p>0369789457</p>
                     </div>
                 </div>
             </div>

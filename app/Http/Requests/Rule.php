@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-class RuleContact extends FormRequest
+class Rule extends FormRequest
 
 {
     /**
