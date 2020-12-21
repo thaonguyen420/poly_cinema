@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 20, 2020 lúc 05:56 AM
+-- Thời gian đã tạo: Th12 20, 2020 lúc 10:49 AM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
 -- Phiên bản PHP: 7.4.6
 
@@ -120,11 +120,11 @@ INSERT INTO `combo` (`id_combo`, `name`, `desc`, `price`, `created_at`, `updated
 
 CREATE TABLE `comment` (
   `id_comment` int(2) NOT NULL,
-  `movieId` int(16) NOT NULL,
+  `movieId` int(16) DEFAULT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `content` varchar(155) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `name` varchar(64) NOT NULL,
+  `content` varchar(155) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `name` varchar(64) DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -139,9 +139,16 @@ INSERT INTO `comment` (`id_comment`, `movieId`, `date`, `content`, `email`, `nam
 (5, 54, '2020-12-19 15:58:14', 'Phim hay', 'thaonguyenvivo2000@gmail.com', 'nguyen nguyenthi', '2020-12-19 08:58:14', '2020-12-19 08:58:14'),
 (6, 54, '2020-12-19 15:59:00', 'Cũng được đó', 'nguyenthao@gmail.com', 'thao nguyen', '2020-12-19 08:59:00', '2020-12-19 08:59:00'),
 (7, 57, '2020-12-20 03:24:55', 'Phim thú vị đáng xem', 'trangnguyen2323@gmail.com', 'Thùy Trang', '2020-12-19 20:24:55', '2020-12-19 20:24:55'),
-(8, 57, '2020-12-20 03:55:36', 'Phim hay nhưng cấu hình không đẹp', 'taiphuc2110@gmail.com', 'Tài Phúc', '2020-12-19 20:55:36', '2020-12-19 20:55:36'),
 (9, 57, '2020-12-20 03:56:36', 'Phim hay nhưng cấu hình không đẹp', 'taiphuc2110@gmail.com', 'Tài Phúc', '2020-12-19 20:56:36', '2020-12-19 20:56:36'),
-(10, 57, '2020-12-20 04:32:10', 'Phim hay nhưng cấu hình không đẹp', 'taiphuc2110@gmail.com', 'Tài Phúc', '2020-12-19 21:32:10', '2020-12-19 21:32:10');
+(10, 57, '2020-12-20 04:32:10', 'Phim hay nhưng cấu hình không đẹp', 'taiphuc2110@gmail.com', 'Tài Phúc', '2020-12-19 21:32:10', '2020-12-19 21:32:10'),
+(14, 57, '2020-12-20 06:26:19', 'không hay đâu', 'nguyennttps08870@fpt.edu.vn', 'nguyen', '2020-12-19 23:26:19', '2020-12-19 23:26:19'),
+(17, NULL, '2020-12-20 06:39:10', 'Không như mong đợi', 'nguyenthao@gmail.com', 'Tuấn Hưng', '2020-12-19 23:39:10', '2020-12-19 23:39:10'),
+(18, 57, '2020-12-20 06:39:10', 'Không như mong đợi', 'nguyenthao@gmail.com', 'Tuấn Hưng', '2020-12-19 23:39:10', '2020-12-19 23:39:10'),
+(19, NULL, '2020-12-20 07:08:01', 'Phim nhìn hơi chán', 'nguyennttps08870@gmail.com', 'nguyen khoa', '2020-12-20 00:08:01', '2020-12-20 00:08:01'),
+(20, 54, '2020-12-20 07:08:01', 'Phim nhìn hơi chán', 'nguyennttps08870@gmail.com', 'nguyen khoa', '2020-12-20 00:08:01', '2020-12-20 00:08:01'),
+(21, 57, '2020-12-20 07:15:38', 'Cũng không hay đâu', 'khoanguyen@gmail.com', 'Nguyễn Khoa', '2020-12-20 00:15:38', '2020-12-20 00:15:38'),
+(22, 54, '2020-12-20 09:29:49', 'không hấp dẫn', 'admin@gmail.com', 'nguyen nguyenthi', '2020-12-20 02:29:49', '2020-12-20 02:29:49'),
+(23, 54, '2020-12-20 09:29:54', NULL, NULL, NULL, '2020-12-20 02:29:54', '2020-12-20 02:29:54');
 
 -- --------------------------------------------------------
 
@@ -318,7 +325,8 @@ INSERT INTO `room` (`roomId`, `number`, `status`, `theaterId`, `updated_at`, `cr
 (2, 2, 0, 4, NULL, NULL),
 (4, 3, 1, 1, '2020-11-24 21:24:00', NULL),
 (6, 4, 0, 1, '2020-11-24 20:12:30', '2020-11-24 20:12:30'),
-(7, 4, 0, 1, '2020-11-24 20:31:17', '2020-11-24 20:31:17');
+(7, 4, 0, 1, '2020-11-24 20:31:17', '2020-11-24 20:31:17'),
+(8, 2, 1, 4, '2020-12-20 02:22:11', '2020-12-20 02:22:11');
 
 -- --------------------------------------------------------
 
@@ -566,7 +574,7 @@ ALTER TABLE `combo`
 -- AUTO_INCREMENT cho bảng `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `id_comment` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_comment` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT cho bảng `contact`
@@ -602,7 +610,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT cho bảng `room`
 --
 ALTER TABLE `room`
-  MODIFY `roomId` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `roomId` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT cho bảng `schedule`

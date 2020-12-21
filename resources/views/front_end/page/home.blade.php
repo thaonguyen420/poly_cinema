@@ -32,7 +32,7 @@
                     <div class="movie-poster">
                         <aside>
                             <div>
-                                <a href="<?=$sc->trailer?>" data-vbtype="video" class="venobox play">
+                                <a href="https://www.youtube.com/embed/{{$sc->trailer}}" data-vbtype="video" class="venobox play">
                                     <i class="material-icons">play_arrow</i>
                                 </a>
                                 <a href="{{URL::to('single-movie/'.$sc->movieId)}}" class="read-more">Mua vé</a>
@@ -42,7 +42,7 @@
                         <img src="<?=$sc->row?>" alt="Movie title" class="w-100" />
                         </a>
                     </div>
-                    <h4 class="no-underline"> <a href="{{URL::to('single-movie/'.$sc->movieId)}}"><?=$sc->name?> </a></h4>
+                    <h4 class="no-underline title-psc"> <a href="{{URL::to('single-movie/'.$sc->movieId)}}"><?=$sc->name?> </a></h4>
                 </div>
                 @endforeach
             </div>
@@ -118,11 +118,11 @@
                         <i class="material-icons">date_range</i> 
                         {{date("d/m/Y",strtotime($phim->release_date))}}
                     </div>
-                    <p> {{$phim->content}}</p>
+                    <p> {!! $phim->content !!}</p>
                     <p><a href="{{URL::to('single-movie/'.$phim->movieId)}}" class="arrow-button">Xem thêm</a></p>
                 </div>
                 <div class="col-sm-6 col-xs-12 col-sm-push-1 slide-video">
-                    <a href="{{$phim->trailer}}" data-vbtype="video" class="venobox video">
+                    <a href="https://www.youtube.com/embed/{{$phim->trailer}}" data-vbtype="video" class="venobox video">
                         <i class="material-icons">play_arrow</i>
                         <img src="{{$phim->row}}" alt="" style="
     width: 100%;
@@ -143,7 +143,6 @@
                     <h5 class="left no-underline">{{$ph->name}}</h5>
                 </div>
                 @endforeach
-                    
                 </div>
                 </a>
             </div>
@@ -156,9 +155,14 @@
             <h2>Blog điện ảnh</h2>
             <hr class="space-40" />
             <div class="row">
+<<<<<<< HEAD
                 <div class="col-sm-12">
                
                     <div class="slick-carousel news-carousel">
+=======
+                <div class="col-sm-12">              
+                    <div class="slick-carousel news-carousel">                     
+>>>>>>> 2bf11afc8fb9c3c9529ffe0bb1612760aa060a0f
                             @foreach($new as $tin)
                             <div class="blog-item"> 
                                 <div class="movie-poster">

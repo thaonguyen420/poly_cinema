@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-class RuleContact extends FormRequest
+class Rule extends FormRequest
 
 {
     /**
@@ -35,8 +35,6 @@ class RuleContact extends FormRequest
           'email.unique' =>' Đã có người dùng email này',
           'email.ends_with' => ':attribute là phải @gmail.com',
           'content.required'=>'Chưa nhập nội dung bạn ơi'
-
         ];
-      }
-      
+      }     
 }

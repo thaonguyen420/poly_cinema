@@ -19,7 +19,7 @@
                         <li><i>Đạo diễn : </i> <span class="text-detail">{{$movies ->director}}</span></li>
                         <li><i>Diễn viên :</i> <span class="text-detail"> {{$movies ->actor}}</span></li>
                         <li><i>Quốc gia :</i> <span class="text-detail"> {{$movies ->nation}}</span></li>
-                        <li><i>Ngày công chiếu:</i> <span class="text-detail"> {{$movies ->release_date}}</span></li>
+                        <li><i>Ngày công chiếu:</i> <span class="text-detail">{{date("d/m/Y",strtotime($movies ->release_date))}}  </span></li>
                         <li><i>Thời lượng:</i> <span class="text-detail"> {{$movies ->time}}/phút</span></li>
                         <li><i>Ngôn ngữ :</i> <span class="text-detail"> {{$movies ->language}}</span></li>
                     </ul>
@@ -84,7 +84,7 @@
                 <div class="row single-slide slideOne">
                     <div class="bg"></div>
                     <div class="col-sm-12 slide-video" style="text-align: center;">
-                        <iframe width="1000" height="500" src="{{$movies ->trailer}}" frameborder="0"
+                    <iframe width="1000" height="500" src="https://www.youtube.com/embed/{{$movies ->trailer}}" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
@@ -186,11 +186,11 @@
                         <img src="images/avatar.png" class="Luke Barrett" />
                     </div>
                     <div class="col-sm-9">
-                        <span class="date">{{$bl->date}}
-                            <h4 class="no-underline" style="    margin-top: 9px;
+                        <span class="date">{{date("d/m/Y",strtotime($bl->date))}}   
+                            <h4 class="no-underline" style="margin-top: 9px;
                             font-size: 16px;
                             text-transform: capitalize;">{{$bl->name}}</h4>
-                            <p style="color: #7E7171;">{!!$bl->content!!}</p>
+                            <p style="color: #7E7171;text-transform:none;font-size:14px">{!!$bl->content!!}</p>
                     </div>
                 </div>
                 @endforeach
@@ -202,16 +202,25 @@
                 @csrf
                 <div class="form-group">
                     <label>Họ và tên *</label>
-                    <input type="text" name="name" />
+                    <input type="text" name="name" value="{{old('name')}}"/>
                 </div>
+                @error('name')
+                    <span class="red"> {{ $message }} </span>
+                @enderror
                 <div class="form-group">
                     <label>Email *</label>
-                    <input type="email" name="email" />
+                    <input type="email" name="email" value="{{old('email')}}"/>
                 </div>
+                @error('email')
+                    <span class="red"> {{ $message }} </span>
+                @enderror
                 <div class="form-group">
                     <label>Nội dung *</label>
-                    <textarea rows="5" name="content"></textarea>
+                    <textarea rows="5" name="content" value="{{old('content')}}"></textarea>
                 </div>
+                @error('content')
+                    <span class="red"> {{ $message }} </span>
+                @enderror
                 <div class="form-group right-align">
                     <input class="form-control" type="submit">
                 </div>

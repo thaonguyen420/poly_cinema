@@ -47,27 +47,7 @@
                         <td >
                             {!!$tt->content!!}
                         </td>
-                        <!-- <td>                       
-                            {{$tt->time}}
-                        </td>
-                        <td>                       
-                            {{$tt->	release_date}}
-                        </td>
-                        <td>                       
-                            {{$tt->director}}
-                        </td>
-                        <td>                       
-                            {{$tt->actor}}
-                        </td>
-                        <td>                       
-                            {{$tt->nation}}
-                        </td>
-                        <td>                       
-                            {{$tt->producer}}
-                        </td>
-                        <td>                       
-                            {{$tt->language}}
-                        </td> -->
+                        
                         <td>
                             @php $id_tl = $tt->id_tl; $tl = App\Models\theloai::find($id_tl); if($tl!=null) echo $tl->ten_tl; @endphp
                         </td>
@@ -92,4 +72,29 @@
                     </div>
                     <!-- end row -->
                     @endsection
-                   
+                    @section('js_script')
+<script src="{{asset('lib')}}/datatables/jquery.dataTables.js"></script>
+<link href="{{asset('lib')}}/datatables/jquery.dataTables.css" rel="stylesheet">
+<script>
+$(function() {
+    $('#datatable-buttons').DataTable({
+        responsive: true,
+        pageLength: 2,
+        language: {
+            searchPlaceholder: 'Tìm kiếm ',
+            sSearch: '',
+            lengthMenu: '_MENU_ items/page',
+            paginate: {
+                previous: " < ",
+                next: " > "
+            },
+            lengthMenu: "Hiện _MENU_ tin trong mỗi trang",
+            zeroRecords: "Không tìm thấy",
+            info: "Đang hiện trang _PAGE_ trong _PAGES_ trang",
+            infoEmpty: "Không có dòng nào",
+            infoFiltered: "(Lọc trong _MAX_ tin)",
+        }
+    });
+});
+</script>
+@endsection
