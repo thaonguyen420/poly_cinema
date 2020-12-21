@@ -13,7 +13,8 @@
                     ->offset(0)->limit(5)->get();
                 ?>
 <?php 
-     $new = DB::table('news') ->select('new_id','new_title','new_desc','new_content','new_image')->paginate(4);
+     $new = DB::table('news') ->select('new_id','new_title','new_desc','new_content','new_image')
+     ->offset(0)->limit(3)->get();
      
                 ?>
 
@@ -158,7 +159,6 @@
                 <div class="col-sm-12">
                
                     <div class="slick-carousel news-carousel">
-                      
                             @foreach($new as $tin)
                             <div class="blog-item"> 
                                 <div class="movie-poster">
@@ -180,13 +180,13 @@
                                     <h3><a href="{{URL::to('news-single/'.$tin->new_id)}}"><?=$tin->new_title?></a></h3>
                                     <div class="blog-content ">
                                         <p><?=$tin->new_desc?></p>
-
                                     </div>
                                 </div>
                                 <!-- /.blog-item-text -->
                             </div>
+                            @endforeach
                         
-                        @endforeach
+                        
                     <div>
                     </div>
                 </div>

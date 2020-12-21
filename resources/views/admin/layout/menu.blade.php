@@ -68,7 +68,7 @@
                                 <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-format-list-bulleted"></i> <span> Suất chiếu, vé </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
                                     <li><a href="{{route('schedule.index')}}">Suất chiếu</a></li>
-                                    <li><a href="{{route('schedule.create')}}">Thêm suất chiếu</a></li>
+                                    <li><a href="{{route('schedule.create')}}">Thêm suất chiếu</a></li>.
                                 </ul>
                             </li>
                             <li class="has_sub">

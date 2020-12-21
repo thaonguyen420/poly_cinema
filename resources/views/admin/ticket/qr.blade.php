@@ -82,8 +82,6 @@
                                 <b class="ticket-title">Vé Xem Phim</b>
                                 <b class="ticket-status">Tình trạng</b>
                                 <div id="ticket-status"></div>
-                                <!-- <b class="ticket-checked"> <i class="fas fa-check"></i> Hợp Lệ <i class="fas fa-check"></i></b> -->
-                                <!-- <b class="ticket-deny"> <i class="fas fa-ban"></i> Không Hợp Lệ <i class="fas fa-ban"></i></b> -->
                                 <b class="ticket-code">Mã vé: <span id="ticket-code"></span></b>
                                 <b class="ticket-seat">Ghế</b>
                                 <b class="seat" id="seat">

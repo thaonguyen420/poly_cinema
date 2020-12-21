@@ -24,8 +24,10 @@ use App\Http\Controllers\Controller_Phim;
     Route::resource('/theater', 'TheaterController'); 
     Route::resource('/room', 'RoomController'); 
     Route::resource('/contact_Ad', 'Contact_AdController'); 
+  
     Route::resource('/ticket', 'Controller_ve'); 
-    Route::resource('/schedule', 'Controller_suatchieu'); 
+    Route::resource('/sell','Controller_banve');
+    Route::resource('/schedule', 'Controller_suatchieu');
     
     }); 
    

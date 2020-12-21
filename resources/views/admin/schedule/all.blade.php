@@ -12,6 +12,7 @@
                                             <th>Thời gian chiếu</th>                                         
                                             <th>Phim </th>
                                             <th>Rạp - Phòng</th>
+                                            <th>Bán vé</th>
                                             <th>Soát vé</th>
                                             <th>Chỉnh</th>
                                             <th>Xóa</th>
@@ -50,6 +51,11 @@
 			    					echo "{$rowTL->name} - {$rowTL->number}";
 								}	
 						@endphp 
+                        </td>
+                        <td>
+                            <a href="/ticket?schedule={{$tt->id_schedule}}"  class="btn btn-primary">
+                                Bán vé
+                            </a>  
                         </td>
                         <td>
                             <a href="/ticket?schedule={{$tt->id_schedule}}"  class="btn btn-primary">
