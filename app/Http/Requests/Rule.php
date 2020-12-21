@@ -35,8 +35,6 @@ class Rule extends FormRequest
           'email.unique' =>' Đã có người dùng email này',
           'email.ends_with' => ':attribute là phải @gmail.com',
           'content.required'=>'Chưa nhập nội dung bạn ơi'
-
         ];
-      }
-      
+      }     
 }

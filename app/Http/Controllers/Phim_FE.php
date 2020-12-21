@@ -11,7 +11,7 @@ use App\Http\Requests\Rule;
 
 class Phim_FE extends Controller
 {
-    public function index(){
+    public function index(){ 
         return view("index");
     }
     public function chitietphim($movieId){
@@ -36,7 +36,6 @@ class Phim_FE extends Controller
         $post = Phim::where("name","like","%".$search."%")->get();
         return view("front_end.page.search",['post'=>$post],['search'=>$search]);
     }
-    
     public function filmKind()
     {
         $ten_tl= category_movie::All();

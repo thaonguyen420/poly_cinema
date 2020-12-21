@@ -117,7 +117,7 @@
                         <i class="material-icons">date_range</i> 
                         {{date("d/m/Y",strtotime($phim->release_date))}}
                     </div>
-                    <p> {{$phim->content}}</p>
+                    <p> {!! $phim->content !!}</p>
                     <p><a href="{{URL::to('single-movie/'.$phim->movieId)}}" class="arrow-button">Xem thêm</a></p>
                 </div>
                 <div class="col-sm-6 col-xs-12 col-sm-push-1 slide-video">
